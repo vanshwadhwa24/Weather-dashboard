@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 body {
-  background-image: url("pexels-pixabay-414660.jpg");
+  background-image: url("gorgeous-clouds-background-with-blue-sky-design_1017-25501.avif");
+  /* background: #b0cab8; */
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -10,10 +11,10 @@ body {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  color: #0f167c;
+  color: #ffffff;
 
-  text-shadow: 1px 1px 0 #f7f7f7, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff,
-    -1px 1px 0 #ffffff; /* Outline color and thickness */
+  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000,
+    -1px 1px 0 #000000; /* Outline color and thickness */
     overflow: hidden;
 }
 
@@ -45,7 +46,7 @@ body {
   border-radius: 20%;
   position: relative;
   top: -10vw;
-  left: 23vw;
+  left: 50vw;
 }
 .city input {
   background-color: rgba(255, 255, 255, 0.477);
@@ -62,5 +63,14 @@ body {
 .thanks{
   position: relative;
   top: -6vw;
-  left: 36vw;
+  left: 58vw;
+}
+.dynamic{
+  
+  position: relative;
+  right: -120px;
+  bottom: 80vh;
+}
+#dynamicImage{
+  width: 360px;
 }
