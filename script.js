@@ -1,4 +1,7 @@
-const apiKey = "96509125e21d68ea12ba5e183e3cebd3";
+// Import the API key from config.js
+import CONFIG from "./config.js"; // Ensure this path is correct based on your project structure
+
+const apiKey = CONFIG.API_KEY; // Use the imported API key
 
 function getLocation() {
   return new Promise((resolve, reject) => {
@@ -13,6 +16,7 @@ function getLocation() {
     }
   });
 }
+
 async function getWeather(city = null) {
   try {
     let apiUrl;
@@ -87,6 +91,7 @@ function handleweather(condition) {
       weatherConditionElement.textContent = "Weather condition not recognized.";
   }
 }
+
 document.getElementById("getWeatherBtn").addEventListener("click", () => {
   const city = document.getElementById("cityInput").value;
   if (city) {
@@ -95,4 +100,5 @@ document.getElementById("getWeatherBtn").addEventListener("click", () => {
     alert("Please enter city name");
   }
 });
+
 getWeather();
